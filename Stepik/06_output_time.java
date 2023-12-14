@@ -5,6 +5,7 @@ Sample Input:
 Sample Output:
 5 часов 39 минут 27 секунд
 
+// put your code here
 import java.util.Scanner;
 
 class Main {
