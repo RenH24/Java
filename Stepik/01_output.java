@@ -6,7 +6,8 @@ Sample Output:
   По этому поводу Вам скидка 15.5%
   на весь ассортимент нашего сайта! 
 
-  class Main {
+// put your code here
+class Main {
     public static void main(String[] args) {
         String name = "Андрей";
         int age = 23;
