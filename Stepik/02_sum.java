@@ -1,10 +1,9 @@
-/* 
 Напишите программу, которая считает сумму двух целых чисел.
+
 Sample Input:
 8 11
 Sample Output:
 19
-*/
 
 import java.util.Scanner;
 
