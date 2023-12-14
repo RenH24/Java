@@ -11,6 +11,7 @@ Sample Output:
 По этому поводу дарим Вам скидку 23.3%
 на весь ассортимент нашего сайта!
 
+// put your code here
 import java.util.Scanner;
 
 class Main {
