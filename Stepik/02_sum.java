@@ -5,6 +5,7 @@ Sample Input:
 Sample Output:
 19
 
+// put your code here
 import java.util.Scanner;
 
 class Main {
