@@ -7,6 +7,7 @@ Sample Input:
 Sample Output:
 31 р. 78 к.
 
+// put your code here
 import java.util.Scanner;
 
 class Main {
