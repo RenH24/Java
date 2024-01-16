@@ -1,14 +1,14 @@
-Напишите программу, которая считает сумму двух целых чисел.
+/*Напишите программу, которая считает сумму двух целых чисел.
 
 Sample Input:
 8 11
 Sample Output:
 19
-
+*/
 // put your code here
 import java.util.Scanner;
 
-class Main {
+class Main2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numb1;
