@@ -11,7 +11,7 @@ Main-Class: MyFirstClass
 Создайте архив myfirst.jar, включив в него полученные ранее файлы классов и указав созданный вами манифест-файл. 
 Запустите его на выполнение с помощью команды “java –jar myfirst.jar ”. */
 
-//Компиляция МySecondClass:
+/*Компиляция МySecondClass:
 javac MySecondCLass.java
-//Компиляция MyFirstClass3:
-javac MyFirstClass3.java -classpath ./MyFirstPackage/*
+Компиляция MyFirstClass3:
+javac MyFirstClass3.java -classpath ./MyFirstPackage/* */
