@@ -13,21 +13,19 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 Note that the Java version expects a return value of null for an empty string or null.
 */
 
-public class JadenCase {
-
+class JadenCase {
 	public String toJadenCase(String phrase) {
-		// TODO put your code below this comment
-		if (phrase == null || phrase.length() == 0) return null;
-    
-    String[] words = phrase.split(" +");
-    String result = "";
-    for(int i = 0; i < words.length; i++) {
-      String symb1 = words[i].substring(0, 1).toUpperCase();
-      words[i] = symb1 + words[i].substring(1);
-      result += words[i];
-      result += " ";
-    }
-    result = result.trim();
+	// TODO put your code below this comment
+		if (phrase == null || phrase.length() == 0) return null;    
+		String[] words = phrase.split(" +");
+		String result = "";
+		for(int i = 0; i < words.length; i++) {
+			String symb1 = words[i].substring(0, 1).toUpperCase();
+			words[i] = symb1 + words[i].substring(1);
+			result += words[i];
+			result += " ";
+		}
+		result = result.trim();
 		return result;
 	}
 }
