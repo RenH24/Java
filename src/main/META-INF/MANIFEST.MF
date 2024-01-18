@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Kosarev
+Main-Class: lab1.MyFirstClass3
+
