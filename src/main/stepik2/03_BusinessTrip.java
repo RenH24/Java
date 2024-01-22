@@ -1,3 +1,4 @@
+package stepik2;
 /*
 Описать класс BusinessTrip, хранящий информацию о командировочных расходах работников. Учтите, что денежные средства нужно хранить в целых переменных!
 
@@ -34,7 +35,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         BusinessTrip trip1 = new BusinessTrip();

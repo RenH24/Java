@@ -1,3 +1,4 @@
+package stepik2;
 /*
 Описать класс Commodity, описывающий товар.
 Поля:
@@ -49,7 +50,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Commodity commodity = new Commodity();

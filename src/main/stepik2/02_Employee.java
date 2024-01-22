@@ -1,3 +1,4 @@
+package stepik2;
 /*
 Описать класс Employee, предназначенный для хранения информации  о работниках организации.
 
@@ -29,7 +30,7 @@ Ivanov;male;65;90000
 
 import java.util.Scanner;
 
-class Main {
+class Main2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Employee person = new Employee();
