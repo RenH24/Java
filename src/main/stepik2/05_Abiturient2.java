@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Доработайте класс Abiturient, созданный в п.1.2:
 Сделайте все поля приватными согласно принципу инкапсуляции;
@@ -16,13 +16,13 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Abiturient[] list = new Abiturient[3];
-        list[0] = new Abiturient();
-        list[1] = new Abiturient("Петров", "Андрей", 90, 70, 80);
-        list[2] = new Abiturient("Алексиевич", "Анна");
+        Abiturient2[] list = new Abiturient2[3];
+        list[0] = new Abiturient2();
+        list[1] = new Abiturient2("Петров", "Андрей", 90, 70, 80);
+        list[2] = new Abiturient2("Алексиевич", "Анна");
         list[0].setSurname(scan.next());
         list[2].setPhysics(scan.nextInt());
         list[2].setMath(scan.nextInt());
@@ -35,22 +35,22 @@ class Main {
     }
 }
 
-class Abiturient {
+class Abiturient2 {
     private String surname;
     private String name;
     private int math;
     private int physics;
     private int lang;
 
-    public Abiturient() {
+    public Abiturient2() {
     }
     
-    public Abiturient(String surname, String name) {
+    public Abiturient2(String surname, String name) {
         this.surname = surname;
         this.name = name;
     }
     
-    public Abiturient(String surname, String name, int math, int physics, int lang) {
+    public Abiturient2(String surname, String name, int math, int physics, int lang) {
         this.surname = surname;
         this.name = name;
         this.math = math;

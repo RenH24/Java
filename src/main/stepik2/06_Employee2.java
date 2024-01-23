@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Доработайте класс Employee, созданный в п.1.2:
 Сделайте все поля приватными согласно принципу инкапсуляции;
@@ -25,7 +25,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
@@ -34,9 +34,9 @@ class Main {
             return;
         }
         
-        Employee[] list = new Employee[size];
+        Employee2[] list = new Employee2[size];
         for(int i = 0; i < list.length; i++) {
-            list[i] = new Employee(scan.next(), scan.next(), scan.nextInt(), scan.nextInt());
+            list[i] = new Employee2(scan.next(), scan.next(), scan.nextInt(), scan.nextInt());
             if(list[i].isPensioner()) {
                 list[i].setSalary(90000);
             }
@@ -50,16 +50,16 @@ class Main {
     }
 }
 
-class Employee {
+class Employee2 {
     private String surname;
     private String gender;
     private int age;
     private int salary;
 
-    public Employee() {
+    public Employee2() {
     }
 
-    public Employee(String surname, String gender, int age, int salary) {
+    public Employee2(String surname, String gender, int age, int salary) {
         this.surname = surname;
         this.gender = gender;
         this.age = age;

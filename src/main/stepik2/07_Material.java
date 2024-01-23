@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Разработайте класс Material, описывающий некоторый физический материал (вещество).
 Поля: название вещества, плотность.
@@ -27,7 +27,7 @@ wire;copper;8500;0.05;425.0
 
 import java.util.Scanner;
 
-class Main {
+class Main7 {
     public static void main(String[] args) {        
         Thing wire = new Thing("wire", new Material("steel", 7850), 0.03);
         wire.show();
