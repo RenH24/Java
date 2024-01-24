@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Доработайте  класс Commodity, созданный в п.1.2:
 Сделайте все поля приватными согласно принципу инкапсуляции. А методы сделайте публичными.
@@ -32,7 +32,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
@@ -40,10 +40,10 @@ class Main {
             System.out.println("ERROR");
             return;
         }
-        Purchase[] list = new Purchase[n];
+        Purchase2[] list = new Purchase2[n];
         
         for(int i = 0; i < list.length; i++) {
-            list[i] = new Purchase(new Commodity(scan.next(), scan.nextInt()), scan.nextInt());
+            list[i] = new Purchase2(new Commodity2(scan.next(), scan.nextInt()), scan.nextInt());
         }
         
         int max = list[0].getCost();
@@ -52,7 +52,7 @@ class Main {
                 max = list[i].getCost();
             }
         }
-        for(Purchase item: list) {
+        for(Purchase2 item: list) {
             if(item.getCost() == max) {
                 System.out.println(item);
             }
@@ -60,14 +60,14 @@ class Main {
     }
 }
 
-class Commodity {
+class Commodity2 {
     private String name;
     private int price;
 
-    public Commodity() {
+    public Commodity2() {
     }
 
-    public Commodity(String name, int price) {
+    public Commodity2(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -99,14 +99,14 @@ class Commodity {
     }
 }
 
-class Purchase {
-    private Commodity commodity;
+class Purchase2 {
+    private Commodity2 commodity;
     private int numbers;
 
-    public Purchase() {
+    public Purchase2() {
     }
 
-    public Purchase(Commodity commodity, int numbers) {
+    public Purchase2(Commodity2 commodity, int numbers) {
         this.commodity = commodity;
         this.numbers = numbers;
     }

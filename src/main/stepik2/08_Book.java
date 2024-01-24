@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс Book: Название, Автор(ы), Издательство, Год издания. Определите несколько конструкторов. 
 Если в конструктор не передается значение какого-то поля, то этому полю присваиваются значения по умолчанию. Для строк это пустая строка: "", для чисел 0.
@@ -20,7 +20,7 @@ Sample Output:
 */
 import java.util.Scanner;
 
-class Main {
+class Main8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String name;

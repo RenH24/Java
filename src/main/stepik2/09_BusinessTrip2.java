@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Доработайте класс BusinessTrip, созданный в п.1.2:
 Сделайте все поля приватными согласно принципу инкапсуляции. А методы сделайте публичными.
@@ -39,7 +39,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main9 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
@@ -48,12 +48,12 @@ class Main {
             return;
         }
         
-        BusinessTrip[] list = new BusinessTrip[size];
+        BusinessTrip2[] list = new BusinessTrip2[size];
         for(int i = 0; i < list.length - 1; i++) {
-            list[i] = new BusinessTrip(scan.next(), scan.nextInt(), scan.nextInt());
+            list[i] = new BusinessTrip2(scan.next(), scan.nextInt(), scan.nextInt());
         }
         
-        list[list.length - 1] = new BusinessTrip(list[0]);
+        list[list.length - 1] = new BusinessTrip2(list[0]);
         scan.skip("\n");
 
         list[0].setName(scan.next());
@@ -75,27 +75,27 @@ class Main {
     }
 }
 
-class BusinessTrip {
+class BusinessTrip2 {
     static final int PER_DIEM = 25;
     private String name;
     private int days;
     private int transCosts;
 
-    public BusinessTrip() {
+    public BusinessTrip2() {
     }
 
-    public BusinessTrip(String name, int days) {
+    public BusinessTrip2(String name, int days) {
         this.name = name;
         this.days = days;
     }
 
-    public BusinessTrip(String name, int days, int transCosts) {
+    public BusinessTrip2(String name, int days, int transCosts) {
         this.name = name;
         this.days = days;
         this.transCosts = transCosts;
     }
 
-    public BusinessTrip(BusinessTrip businessTrip) {
+    public BusinessTrip2(BusinessTrip2 businessTrip) {
         this.name = businessTrip.name;
         this.days = businessTrip.days;
         this.transCosts = businessTrip.transCosts;
