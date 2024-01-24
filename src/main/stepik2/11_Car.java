@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создать класс Car, представляющий автомобиль.
 Поля:
@@ -48,7 +48,7 @@ Car{brand='nissan', owner='Сидоров', volume=3.2, yearOfMade=2018}
 import java.util.Scanner;
 import java.util.Calendar;
 
-class Main {
+class Main11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
