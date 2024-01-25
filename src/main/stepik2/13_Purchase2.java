@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В п.1.2 были созданы, а в п.1.4 были доработаны классы Commodity и Purchase
 
@@ -70,11 +70,11 @@ NO
 import java.util.Scanner;
 import java.util.Objects;
 
-class Main {
+class Main13 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        Purchase[] data = new Purchase[n];
+        Purchase3[] data = new Purchase3[n];
         
         double discount = scan.nextDouble();
         FixDiscountPurchase.setDiscount(discount);
@@ -91,13 +91,13 @@ class Main {
             int numbers = scan.nextInt();
             switch (type) {
                 case 1:
-                    data[i] = new Purchase(new Commodity(name, price), numbers);
+                    data[i] = new Purchase3(new Commodity3(name, price), numbers);
                     break;
                 case 2:
-                    data[i] = new FixDiscountPurchase(new Commodity(name, price), numbers);
+                    data[i] = new FixDiscountPurchase(new Commodity3(name, price), numbers);
                     break;
                 case 3:
-                    data[i] = new FlowDiscountPurchase(new Commodity(name, price), numbers);
+                    data[i] = new FlowDiscountPurchase(new Commodity3(name, price), numbers);
                     break;
                 default:
                     data[i] = null;
@@ -131,14 +131,14 @@ class Main {
     }
 }
 
-class Commodity {
+class Commodity3 {
     private String name;
     private int price;
 
-    public Commodity() {
+    public Commodity3() {
     }
 
-    public Commodity(String name, int price) {
+    public Commodity3(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -177,14 +177,14 @@ class Commodity {
     }
 }
 
-class Purchase {
-    private Commodity commodity;
+class Purchase3 {
+    private Commodity3 commodity;
     private int numbers;
 
-    public Purchase() {
+    public Purchase3() {
     }
 
-    public Purchase(Commodity commodity, int numbers) {
+    public Purchase3(Commodity3 commodity, int numbers) {
         this.commodity = commodity;
         this.numbers = numbers;
     }
@@ -210,11 +210,11 @@ class Purchase {
         return Objects.hash(commodity);
     }
 
-    public Commodity getCommodity() {
+    public Commodity3 getCommodity() {
         return commodity;
     }
 
-    public void setCommodity(Commodity commodity) {
+    public void setCommodity(Commodity3 commodity) {
         this.commodity = commodity;
     }
 
@@ -227,13 +227,13 @@ class Purchase {
     }
 }
 
-class FixDiscountPurchase extends Purchase {
+class FixDiscountPurchase extends Purchase3 {
     static private double discount;
 
     public FixDiscountPurchase() {
     }
 
-    public FixDiscountPurchase(Commodity commodity, int numbers) {
+    public FixDiscountPurchase(Commodity3 commodity, int numbers) {
         super(commodity, numbers);
     }
 
@@ -256,14 +256,14 @@ class FixDiscountPurchase extends Purchase {
     }
 }
 
-class FlowDiscountPurchase extends Purchase {
+class FlowDiscountPurchase extends Purchase3 {
     static private double discount;
     static private int minAmount;
 
     public FlowDiscountPurchase() {
     }
 
-    public FlowDiscountPurchase(Commodity commodity, int numbers) {
+    public FlowDiscountPurchase(Commodity3 commodity, int numbers) {
         super(commodity, numbers);
     }
 

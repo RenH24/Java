@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Рассмотрим процесс развития проекта по организации учета вступительных экзаменов на тренинг по программированию.
 
@@ -53,7 +53,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main12 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
