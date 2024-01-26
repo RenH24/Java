@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В п.1.5 мы создали класс Car (автомобиль). Если Вы пропустили этот пункт, то создайте класс Car заново:
 Поля:
@@ -52,11 +52,11 @@ Truck{brand='ВИС-2347', owner='Ермоленко', volume=2.6, yearOfMade=20
 import java.util.Scanner;
 import java.util.Calendar;
 
-class Main {
+class Main14 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        Car[] data = new Car[n];
+        Car2[] data = new Car2[n];
 
         //заполнение массива
         for(int i = 0; i < data.length; i++) {
@@ -67,7 +67,7 @@ class Main {
             int yearOfMade = scan.nextInt();
             switch (type) {
                 case 1:
-                    data[i] = new Car(brand, owner, volume, yearOfMade);
+                    data[i] = new Car2(brand, owner, volume, yearOfMade);
                     break;
                 case 2:
                     data[i] = new Truck(brand, owner, volume, yearOfMade, scan.nextDouble());
@@ -76,7 +76,7 @@ class Main {
         }
 
         //вывод массива на консоль
-        for (Car item: data) {
+        for (Car2 item: data) {
             System.out.println(item);
         }
         System.out.println();
@@ -100,7 +100,7 @@ class Main {
     }
 }
 
-class Car {
+class Car2 {
     private String brand;
     private String owner;
     private double volume;
@@ -112,10 +112,10 @@ class Car {
         yearNow = cal.get(Calendar.YEAR);
     }
 
-    public Car() {
+    public Car2() {
     }
 
-    public Car(String brand, String owner, double volume, int yearOfMade) {
+    public Car2(String brand, String owner, double volume, int yearOfMade) {
         this.brand = brand;
         this.owner = owner;
         this.volume = volume;
@@ -173,7 +173,7 @@ class Car {
     }
 }
 
-class Truck extends Car {
+class Truck extends Car2 {
     private double capacity;
 
     public Truck() {
@@ -211,6 +211,3 @@ class Truck extends Car {
         }
     }
 }
-
-Truck{brand='fiat', owner='Андреев', volume=4.2, yearOfMade=2020, capacity=1.0}
-Truck{brand='УАЗ-3909', owner='Коваленко', volume=3.2, yearOfMade=2018, capacity=0.925}

@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В п.1.2 был создан, а в п.1.3 доработан класс Employee. Если Вы пропустили эти задачи, то создайте заново этот класс:
 Поля: фамилия, пол, возраст, зарплата в копейках (целое число).
@@ -55,11 +55,11 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main15 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        Employee[] gruppa = new Employee[n];
+        Employee3[] gruppa = new Employee3[n];
         
         //заполнение массива
         for(int i = 0; i < gruppa.length; i++) {
@@ -70,7 +70,7 @@ class Main {
             int salary = scan.nextInt();
             switch (type) {
                 case 1:
-                    gruppa[i] = new Employee(surname, gender, age, salary);
+                    gruppa[i] = new Employee3(surname, gender, age, salary);
                     break;
                 case 2:
                     gruppa[i] = new Programmer(surname, gender, age, salary, scan.next(), scan.next());
@@ -84,13 +84,13 @@ class Main {
         }
         
         //вывод массива
-        for (Employee worker: gruppa) {
+        for (Employee3 worker: gruppa) {
             worker.show();
         }
         
         //рассчет и вывод общего фонда зарплат
         int fond = 0;
-        for (Employee worker: gruppa) {
+        for (Employee3 worker: gruppa) {
             fond += worker.getSalary();
         }
         System.out.println(fond);
@@ -123,16 +123,16 @@ class Main {
     }
 }
 
-class Employee {
+class Employee3 {
     private String surname;
     private String gender;
     private int age;
     private int salary;
     
-    public Employee() {
+    public Employee3() {
     }
 
-    public Employee(String surname, String gender, int age, int salary) {
+    public Employee3(String surname, String gender, int age, int salary) {
         this.surname = surname;
         this.gender = gender;
         this.age = age;
@@ -185,7 +185,7 @@ class Employee {
     }
 }
 
-class Programmer extends Employee {
+class Programmer extends Employee3 {
     private String status;
     private String specialization;
 
@@ -221,7 +221,7 @@ class Programmer extends Employee {
 }
 
 
-class Accountant extends Employee {
+class Accountant extends Employee3 {
     private char gruppa;
 
     public Accountant() {
