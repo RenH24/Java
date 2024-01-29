@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте абстрактный класс Pet. Поля: кличка, возраст. Определите конструкторы, геттеры и сеттеры. 
 Переопределите метод  toString() (должен выдавать все поля в csv-формате). Задайте абстрактный метод void getNoise();
@@ -36,7 +36,7 @@ Cat Бакстер:Мяу-мяу!
 
 import java.util.Scanner;
 
-class Main {
+class Main17 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
