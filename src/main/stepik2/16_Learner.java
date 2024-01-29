@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте абстрактный класс Learner (Учащийся) и производные классы Schoolboy (Школьник) и Student (Студент). 
 Класс Learner должен содержать поля «Фамилия» и «Оценка 1», «Оценка 2», метод для подсчета среднего балла и абстрактный метод «каникулы», который возвращает общую продолжительность каникул в году.
@@ -41,7 +41,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main16 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Student.setBaseScholarship(scan.nextInt());
