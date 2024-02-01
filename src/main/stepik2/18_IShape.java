@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 1.   Опишите интерфейс IShape, содержащий метод double computeSquare(). Этот метод должен будет рассчитывать площадь  геометрической фигуры.
 2.  Создайте класс Rectangle (прямоугольник), реализующий интерфейс IShape.  Метод computeSquare() рассчитывает площадь прямоугольника.
@@ -27,7 +27,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main18 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

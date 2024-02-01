@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 1. Опишите интерфейс Transport с методами:
 boolean canCarry(double weight); //проверяет, может ли объект перевезти заданный груз
@@ -27,7 +27,7 @@ Ship{maxWeight=145.0, totalWeight=62.5}
 
 import java.util.Scanner;
 
-class Main {
+class Main19 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Transport[] list = new Transport[scan.nextInt()];
