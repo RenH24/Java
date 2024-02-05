@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс-исключение BakingException. Предусмотрите конструктор этого класса, в который передается сообщение о причине  неудачи с выпечкой.
 Создайте класс Cook (повар), который содержит:
@@ -34,7 +34,7 @@ Sample Output 2:
 
 import java.util.Scanner;
 
-class Main {
+class Main22 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
