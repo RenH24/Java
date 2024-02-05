@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В методе main() класса Main введите начальное значение генератора псевдослучайных чисел. 
 Затем разыграйте случайное число от 1 до 10. Создайте массив целых чисел соответствующего размера и заполните его нулями.
@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-class Main {
+class Main21 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int gen = scan.nextInt();

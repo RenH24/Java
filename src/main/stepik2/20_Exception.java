@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В методе main() класса Main введите начальное значение генератора псевдослучайных чисел. 
 Затем разыграйте случайное число от -10 до 10 (напоминаю, что для этого можно использовать класс Random). 
@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-class Main {
+class Main20 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
