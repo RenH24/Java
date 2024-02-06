@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В методе main() класса Main введите размер массива, а затем создайте массив целых чисел нужного размера. 
 В следующей строке указаны элементы массива через пробел. Нужно ввести их и заполнить массив. 
@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-class Main {
+class Main25 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //создание массива
