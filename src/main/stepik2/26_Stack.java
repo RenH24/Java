@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс Stack, который реализует динамическую структуру типа LIFO (last in – first out) для символов типа char. Библиотечным классом пользоваться нельзя! 
 Логика функционирования стека должна быть реализована на основе обычного одномерного массива. Размер этого массива передается при создании стека в конструктор. Методы класса:
@@ -25,7 +25,7 @@ q k w t
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-class Main {
+class Main26 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
