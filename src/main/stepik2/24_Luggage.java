@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс-исключение HeavyLuggageException. Предусмотрите конструктор без параметров, в котором вызывается конструктор суперкласса со строковым аргументом “Превышение веса багажа”.
 Создайте класс Luggage (багаж). В этом классе  создайте:
@@ -35,7 +35,7 @@ Sample Output 2:
 
 import java.util.Scanner;
 
-class Main {
+class Main24 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Luggage luggage1 = new Luggage((double) 10);

@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс-исключение TooManyCarsException. Предусмотрите конструктор без параметров, в котором вызывается конструктор суперкласса со строковым аргументом “Вся парковка занята. Свободных мест нет.”
 Создайте класс Parking (парковка), который содержит поле maxQuantity типа byte.
@@ -34,7 +34,7 @@ Sample Output 2:
 
 import java.util.Scanner;
 
-class Main {
+class Main23 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Parking park1 = new Parking((byte) 10);
