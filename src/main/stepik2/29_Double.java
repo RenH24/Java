@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Пользователь вводит строку, в которой находятся числа, разделенные символами решетки. 
 Однако между символами решетки может находится не только число (набор букв и цифр, например). Найти сумму "правильных"  чисел и вывести  ее на консоль. Ответ округлить до одного знака после десятичной точки.
@@ -11,7 +11,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main29 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
