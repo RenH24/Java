@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Программа должна вычислять значение выражения, которое включает единственную операцию для целых неотрицательных чисел (+, -, *, / или %). 
 Пользователь вводит строку без пробелов, которая содержит это выражение. Например: 78+21. 
@@ -14,7 +14,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main27 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
