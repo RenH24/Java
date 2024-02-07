@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Пользователь вводит строку, в которой среди прочих символов находятся целые числа. Например, ab34$78%125-3k
 Нужно найти и вывести на консоль максимальное из этих чисел. В данном примере это 125.
@@ -13,7 +13,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-public class Main {
+class Main28 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
