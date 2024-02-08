@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Пользователь вводит целые числа. Признак конца ввода - слово "finish". 
 Нужно сформировать два списка: для неотрицательных и для отрицательных чисел. 
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-class Main {
+class Main31 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> positive = new ArrayList<>();
