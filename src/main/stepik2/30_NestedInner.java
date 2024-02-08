@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Напишите программу, которая позволяет сравнить двух собак по размеру ошейника.
 В классе Dog будут поля: кличка и порода, ошейник. Ошейник (Collar) - это вложенный приватный класс в классе Dog. Т.е. мы не моделируем магазин ошейников, а моделируем собак!
@@ -18,11 +18,11 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main30 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Dog one = new Dog(scan.next(), scan.next(), scan.next(), scan.nextDouble());
-        Dog two = new Dog(scan.next(), scan.next(), scan.next(), scan.nextDouble());
+        Dog2 one = new Dog2(scan.next(), scan.next(), scan.next(), scan.nextDouble());
+        Dog2 two = new Dog2(scan.next(), scan.next(), scan.next(), scan.nextDouble());
 
         if (one.compareTo(two) > 0) {
             System.out.println("Первая собака больше");
@@ -34,18 +34,18 @@ class Main {
     }
 }
 
-class Dog {
+class Dog2 {
     private String name;
     private String breed;
     private Collar collar;
 
-    public Dog(String name, String breed, String color, double size) {
+    public Dog2(String name, String breed, String color, double size) {
         this.name = name;
         this.breed = breed;
         this.collar = new Collar(color, size);
     }
 
-    public int compareTo(Dog two) {
+    public int compareTo(Dog2 two) {
         return (int) (collar.getSize() - two.collar.getSize());
     }
 
