@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Создайте класс Student подобно тому, как это было сделано в модуле 1.
 Поля: Фамилия студента; Средний балл; Возраст.
@@ -23,11 +23,11 @@ Sample Output:
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Main {
+class Main32 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Student> young = new ArrayList<>();
-        ArrayList<Student> legal = new ArrayList<>();
+        ArrayList<Student2> young = new ArrayList<>();
+        ArrayList<Student2> legal = new ArrayList<>();
 
         
         while (true) {
@@ -38,7 +38,7 @@ class Main {
             double ball = Double.parseDouble(parts[1]);
             int age = Integer.parseInt(parts[2]);
 
-            Student person = new Student(parts[0], ball, age );
+            Student2 person = new Student2(parts[0], ball, age );
             
             if (age < 18) {
                 young.add(person);
@@ -61,18 +61,18 @@ class Main {
     }
 }
 
-class Student{
+class Student2{
     private String name;
     private double ball;
     private int age;
 
-    public Student(String name, double ball, int age) {
+    public Student2(String name, double ball, int age) {
         this.name = name;
         this.ball = ball;
         this.age = age;
     }
 
-    public Student() {
+    public Student2() {
     }
 
     public String getName() {
