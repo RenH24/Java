@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Помните класс Stack, который Вы создавали в п 3.3? В этой задаче нужно его усовершенствовать: сделать так, чтобы он мог работать не только с символами, но и с объектами любого класса!!!
 Отдельно добавьте класс Student с полями: фамилия, средний балл, возраст.
@@ -18,16 +18,16 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main33 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Stack<Student> stack = new Stack<>(10);
-        
+        Stack2<Student3> stack = new Stack2<>(10);
+
         String buffer = scan.nextLine();
         while (!"Конец".equals(buffer)) {
             try {                
                 String[] parts = buffer.split(" ");
-                stack.push(new Student(parts[0], Double.parseDouble(parts[1]), Integer.parseInt(parts[2])));
+                stack.push(new Student3(parts[0], Double.parseDouble(parts[1]), Integer.parseInt(parts[2])));
             } catch (StackException ex) {
                 System.out.println(ex.getMessage());
             }
@@ -37,12 +37,12 @@ class Main {
     }
 }
 
-class Student {
+class Student3 {
     private String name;
     private double ball;
     private int age;
 
-    public Student(String name, double ball, int age) {
+    public Student3(String name, double ball, int age) {
         this.name = name;
         this.ball = ball;
         this.age = age;
@@ -54,20 +54,20 @@ class Student {
     }
 }
 
-class StackException extends Exception{
-    public StackException() {
+class StackException2 extends Exception{
+    public StackException2() {
     }
 
-    public StackException(String message) {
+    public StackException2(String message) {
         super(message);
     }
 }
 
-class Stack <E> {
+class Stack2 <E> {
     E[] array;
     private int top;
 
-    public Stack(int n) {
+    public Stack2(int n) {
         array = (E[]) new Object[n];
         top = 0;
     }
