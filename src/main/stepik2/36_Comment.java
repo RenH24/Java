@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Опишите класс Comment (комментарий) с полями: автор, текст, количество лайков.
 В классе Main создайте массив комментариев, данные вводятся с консоли. В первой строке вводится количество элементов массива. В последующих строках  - сами комментарии. 
@@ -28,7 +28,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 import static java.util.Arrays.sort;
 
-class Main {
+class Main36 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //создание массива
