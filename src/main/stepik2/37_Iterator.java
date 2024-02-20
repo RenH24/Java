@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Как известно, цикл for-each по умолчанию позволяет перебрать массив только от начала  к концу...
 Создайте класс ReverseArray, который инкапсулирует массив целых чисел (т.е. содержит массив в качестве своего поля). Элементы этого класса цикл for-each перебирает в обратном порядке!
@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-class Main {
+class Main37 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] array = new int[scan.nextInt()];
