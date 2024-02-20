@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Разработать класс Range (диапазон) c двумя полями:
 int start - начало диапазона;
@@ -16,7 +16,7 @@ Sample Output:
 import java.util.Iterator;
 import java.util.Scanner;
 
-class Main {
+class Main38 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Range range = new Range(scan.nextInt(), scan.nextInt());
