@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Логгер - это класс, который будет записывать ошибки во внутреннюю строку методом putError() по принципу стека (т.е. последняя ошибка будет в этой строке первой). 
 Метод getErrors() позволяет получить список ошибок в виде итоговой строки.
@@ -12,7 +12,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main39 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Logger logger = Logger.getInstance();
