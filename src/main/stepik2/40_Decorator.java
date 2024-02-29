@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 В некоторой системе передаются сообщения. Класс сообщения представлен классом Message, инкапсулирующим строку.
 В классе Message имеется  метод String getMessage(), который эту строку возвращает.
@@ -21,7 +21,7 @@ MAMA MYLA RAMY
 
 import java.util.Scanner;
 
-class Main {
+class Main40 {
      public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
