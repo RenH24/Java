@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Напишите редактор текста, используя паттерн "Стратегия". В архитектуре программы должен быть интеhфейс Editing с единственным методом String edit(String text).
 Этот интерфейс реализуют классы:
@@ -24,26 +24,26 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main41 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
-        Message message = new Message(text);
+        Message2 message = new Message2(text);
         
         int type = scan.nextInt();        
         Editing editing = null;
         switch (type) {
             case 1:
-                editing = new NoExtraSpaces();
+                editing = new NoExtraSpaces2();
                 break;
             case 2:
-                editing = new NoDigits();
+                editing = new NoDigits2();
                 break;
             case 3:
-                editing = new CapsFirstLetters();
+                editing = new CapsFirstLetters2();
                 break;
             default:
-                editing = new NoEditing();
+                editing = new NoEditing2();
                 break;
         }
         message.setEditWay(editing);
@@ -55,21 +55,21 @@ interface Editing {
     String edit(String text);
 }
 
-class NoExtraSpaces implements Editing {
+class NoExtraSpaces2 implements Editing {
     @Override
     public String edit(String text) {
         return text.trim().replaceAll("[\\s]{2,}", " ");
     }
 }
 
-class NoDigits implements Editing {
+class NoDigits2 implements Editing {
     @Override
     public String edit(String text) {
         return text.replaceAll("[0-9]", "");
     }
 }
 
-class CapsFirstLetters implements Editing {
+class CapsFirstLetters2 implements Editing {
     @Override
     public String edit(String text) {
         char[] chars = text.toCharArray();
@@ -82,18 +82,18 @@ class CapsFirstLetters implements Editing {
     }
 }
 
-class NoEditing implements Editing {
+class NoEditing2 implements Editing {
     @Override
     public String edit(String text) {
         return text;
     }
 }
 
-class Message {
+class Message2 {
     private String text;
     private Editing editWay;
 
-    public Message(String text) {
+    public Message2(String text) {
         this.text = text;
     }
 
