@@ -1,4 +1,4 @@
-
+package stepik2;
 /*
 Нужно использовать паттерн “Фабричный метод” для создания кросс-платформенных элементов интерфейса, не привязывая основной код программы к конкретным классам элементов.
 Имеется базовый класс Dialog, который представляет собой диалоговое окно. В нашем простейшем случае он умеет только рисовать кнопку с надписью “ОК”. 
@@ -16,7 +16,7 @@ Sample Output:
 
 import java.util.Scanner;
 
-class Main {
+class Main42 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
